@@ -1,0 +1,75 @@
+@import "../../../styles/variables.styl"
+@import "../../../styles/media.styl"
+
+.emptyList{
+  &__titleBlock {
+    height: 150px;
+    width: 100%;
+    background-color: $lite-blue-color;
+    background-image: embedurl('../../../static/images/WP_bluebackground_(1).jpg', 'utf-8');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-top: 3px solid $white-color;
+    border-bottom: 3px solid $white-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    +media($xsmall) {
+      height: 110px;
+    }
+
+    +media($mini) {
+      height: 90px;
+    }
+
+  }
+
+  &__title {
+    font-size: 27px;
+    color: $white-color;
+
+    +media($xsmall) {
+      font-size: 22px;
+    }
+
+    +media($mini) {
+      font-size: 16px;
+    }
+
+  }
+
+  &__textBlock {
+    background-color: $header-gray;
+    height: 60px;
+    width: 100%;
+    border-bottom: 2px solid $white-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    +media($xsmall) {
+      height: 50px;
+    }
+
+    +media($mini) {
+      height: 40px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    color: $white-color;
+
+    +media($xsmall) {
+      font-size: 14px;
+    }
+
+    +media($mini) {
+      font-size: 12px;
+    }
+  }
+
+}
+

@@ -1,0 +1,25 @@
+@import "../../../styles/media.styl"
+@import "../../../styles/variables.styl"
+
+.listFoundItems {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 1px solid $white-color;
+  z-index: 3;
+
+  &__listItem {
+    border: 1px solid $white-color;
+    list-style-type: none;
+    width: 33.3%
+
+    +media($xsmall) {
+      width: 50%
+    }
+
+    +media($mini) {
+      width: 100%
+    }
+  }
+}
